@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>EcoGenAI🌍</title>
+
+    <!-- Meta -->
+    <meta name="description"
+        content="Fore is a free, responsive front end template from Papaya, made by Jordan Bowman.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jordan Bowman">
+    <meta name="keywords" content="awesome, hott, extremely attractive, sheer brilliance">
+
+    <!-- Google Author link -->
+    <link rel="author" href="Google+URL" />
+
+    <!-- Favicon.ico and apple-touch-icon.png (according to Apple docs). A good tool is http://iconifier.net/ -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+
+    <!-- CSS, Normalize First, minify for production -->
+    <link rel="stylesheet" type='text/css' href="less/master.css" />
+
+    <!-- Import web fonts using the link tag instead of CSS @import -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+    <!-- Icons from http://fontawesome.io/ -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <style>
+        .iframe-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-main {
+            padding-top: 50px;
+            background-image:url("fore/images/summary.jpg")
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p>
+        <![endif]-->
+
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <h1>EcoGenAI🌍</h1>
+            <p>Your Carbon Footprint Analyser </p>
+        </div>
+    </header>
+
+
+    <!-- First call to action -->
+    <section class="call-to-action">
+        <div class="cta-container cf">
+            <p>Astounding call to action? Yeah, that's right.</p>
+            <a class="btn" href="https://ecogenai.streamlit.app/">Get Started →</a>
+        </div>
+    </section>
+
+    <!-- Macbook Section -->
+    <section id="macbook">
+        <div class="container">
+            <h2>What's this all about?</h2>
+            <p>Welcome to EcoGen AI, your trusted partner in the journey towards a greener and more sustainable future.
+                EcoGen AI is designed to help you understand and reduce your carbon emissions, making it easier for you
+                to contribute to the fight against climate change. Here's how EcoGen AI can help you calculate your
+                carbon footprint and provide actionable steps to minimize it.</p>
+        </div>
+    </section>
+
+
+    <!-- Summary Section -->
+    <section id="summary">
+        <div class="container">
+            <h2>How does it matter you ?</h2>
+            <p> impacts of climate change are increasingly evident, with more frequent and severe weather events, rising
+                sea levels, and widespread environmental degradation. Global efforts to curb emissions are critical to
+                mitigating these effects, but progress varies by region. Immediate action is necessary to transition to
+                renewable energy, protect biodiversity, and ensure a sustainable future. Every individual's contribution
+                to reducing carbon footprints is vital in this urgent fight against climate change.</p>
+            
+        </div>
+
+        <div class="container">
+            <h2>Bothering you now ? Know more</h2>
+            <p> annual change in surface temperature has steadily increased over the past century, with a
+                significant
+                acceleration in recent decades due to human activities such as fossil fuel combustion,
+                deforestation,
+                and industrial processes. This rise in temperature has contributed to climate change, leading to
+                more
+                frequent and severe weather events, melting ice caps, rising sea levels, and disruptions in
+                ecosystems
+                and agriculture. </p>
+                <a class="btn" href="https://ecogenai1.streamlit.app/">Click here!</a>
+        </div>
+    </section>
+
+
+    <section id="slider-main">
+        <div class="slider">
+            <div class="slider" id="slide-1">
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Slider Section -->
+
+
+
+
+
+
+
+
+
+    <!-- Reference jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <!-- Reference Javascript, minify for production -->
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+    <script type="text/javascript" src="js/unslider.js"></script>
+
+    <!-- Unslider script -->
+    <script>
+        $(document).ready(function () {
+            var unslider = $('.slider').unslider();
+            $('.unslider-arrow').click(function (event) {
+                event.preventDefault();
+                if ($(this).hasClass('next')) {
+                    unslider.data('unslider')['next']();
+                } else {
+                    unslider.data('unslider')['prev']();
+                };
+            });
+            var unslider = $('.slider').unslider();
+
+            unslider.on('movestart', function (e) {
+                if ((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
